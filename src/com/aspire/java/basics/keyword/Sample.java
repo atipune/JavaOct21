@@ -1,4 +1,4 @@
-package co.aspire.java.basics.keyword;
+package com.aspire.java.basics.keyword;
 
 public class Sample 
 {
