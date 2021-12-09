@@ -1,6 +1,6 @@
 package com.aspire.java.methods;
 
-import com.aspire.java.DifferentPackMethods.DiffPackStaticMethod;
+import com.aspire.java.DifferentPackMethods.DiffPackMethod;
 //import packageName.className
 
 /*					static method		non static method
@@ -26,10 +26,10 @@ public class StaticMethodFromSameClass
 		DifferentClass.method3();	//Different Class
 		
 		
-		DiffPackStaticMethod.method5();		//Different package
-		DiffPackStaticMethod.method6();		//Different package
-		DiffPackStaticMethod.method2();		//Different package
-		DiffPackStaticMethod.method5();		//Different package
+		DiffPackMethod.method5();		//Different package
+		DiffPackMethod.method6();		//Different package
+		DiffPackMethod.method2();		//Different package
+		DiffPackMethod.method5();		//Different package
 		
 		System.out.println("Main method ends");
 	}
