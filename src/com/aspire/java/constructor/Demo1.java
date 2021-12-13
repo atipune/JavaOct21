@@ -12,7 +12,7 @@ public class Demo1  //defaultConstructor
                 //It will be provided by JVM during program execution
   public void method()
   {
-      System.out.println();
+      System.out.println(a);
       System.out.println(b);
       System.out.println(c);
       System.out.println(d);
