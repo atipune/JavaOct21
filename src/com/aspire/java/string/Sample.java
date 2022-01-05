@@ -15,7 +15,7 @@ public class Sample
 		System.out.println(s1==s2);			//true
 		System.out.println(s1==s3);			//flase
 		System.out.println(s3==s4);			//false   //== object
-		System.out.println(2==s4);			//false
+		System.out.println(s2==s4);			//false
 		System.out.println(s1==s5);			//false
 		System.out.println(s3==s5);			//false
 		System.out.println(s5==s6);			//false
