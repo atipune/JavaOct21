@@ -1,0 +1,52 @@
+package com.aspire.java.collection.list;
+
+import java.util.ArrayList;
+
+public class Arraylist1 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList al= new ArrayList();	//object of imported class not current class
+		
+		al.add("Ajinkya");
+		al.add(1234567890);
+		al.add("abc@gmail.com");
+		al.add('A');
+		al.add(98.5f);
+		al.add(null);
+		al.add(98.5f);
+		al.add(null);
+		al.add("Nagar");
+		System.out.println(al);
+		System.out.println(al.size());
+		System.out.println(al.isEmpty());
+		System.out.println(al.indexOf('A'));
+		System.out.println(al.lastIndexOf(98.5f));
+		
+		al.add(50);
+		System.out.println(al);
+		al.remove(3);	//3rd index data want to delete
+	
+		System.out.println(al);
+		al.remove("abc@gmail.com");
+		System.out.println(al);
+		al.remove(98.5f);
+		System.out.println(al);
+		al.set(6, 60);
+		System.out.println(al);
+		int a=10;
+		System.out.println(al.get(6));
+		System.out.println(a+(int)al.get(6));		//object cast into int
+		al.remove("Nagar");
+		for(int i=0; i<=al.size()-1;i++)
+		{
+			System.out.print(al.get(i)+", ");
+		}
+		System.out.println();
+		for( Object b:al)
+		{
+			System.out.print(b+", ");
+		}
+		
+	}
+}
