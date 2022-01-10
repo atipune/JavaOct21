@@ -1,6 +1,8 @@
 package com.aspire.java.collection.list;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ListIterator;
 
 public class Arraylist1 
 {
@@ -38,14 +40,38 @@ public class Arraylist1
 		System.out.println(al.get(6));
 		System.out.println(a+(int)al.get(6));		//object cast into int
 		al.remove("Nagar");
+		System.out.println("For loop:-");
 		for(int i=0; i<=al.size()-1;i++)
 		{
 			System.out.print(al.get(i)+", ");
 		}
 		System.out.println();
+		System.out.println("Foreach loop:-");
 		for( Object b:al)
 		{
 			System.out.print(b+", ");
+		}
+		System.out.println();
+//		int x = al.size();  			//similarity
+		System.out.println("Iterator only in Forward:-");
+		Iterator itr=al.iterator();				//only forward direction
+		while(itr.hasNext())
+		{
+			System.out.print(itr.next()+", ");
+		}
+		System.out.println();
+		System.out.println("List Iterator in Forward:-");
+		ListIterator li = al.listIterator();	//forward direction
+		while(li.hasNext())
+		{
+			System.out.print(li.next()+", ");
+		}
+		System.out.println();
+		System.out.println("List Iterator in Reverse:-");
+		ListIterator lirev = al.listIterator(al.size());		//reverse direction
+		while(lirev.hasPrevious())
+		{
+			System.out.print(lirev.previous()+", ");
 		}
 		
 	}
